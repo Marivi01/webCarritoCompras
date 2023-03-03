@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda De Frutas y Verduras</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-<link rel="stylesheet" href="./css/main.css"><link>
+<link rel="stylesheet" href="./css"><link>
 </head>
 <body>
     <div class="wrapper">
@@ -36,7 +36,7 @@
             <div class="carrito-productos"></div>
 
             <div class="carrito-producto"></div>
-            <img src="./imagenes/bananas.jpg" alt="">
+            <img class="carrito-producto-imagen"   src="./imagenes/bananas.jpg" alt="">
             <div class="carrito-producto-titulo"></div>
             <small> Titulo </small>
             <h3> Bananas </h3>
@@ -58,7 +58,7 @@
             </div>
 
             <div class="carrito-producto"></div>
-            <img src="./imagenes/duraznos.jpg" alt="">
+            <img class="carrito-producto-imagen" src="./imagenes/duraznos.jpg" alt="">
             <div class="carrito-producto-titulo"></div>
             <small> Titulo </small>
             <h3> Duraznos </h3>
@@ -79,8 +79,8 @@
                 <p> $800 </p>
             </div>
 
-            <div class="carrito-producto"></div>
-            <img src="./imagenes/manzana roja.jpg" alt="">
+            <div class="carrito-producto disabled"></div>
+            <img class="carrito-producto-imagen" src="./imagenes/manzana roja.jpg" alt="">
             <div class="carrito-producto-titulo"></div>
             <small> Titulo </small>
             <h3> Manzanas Deliciosas, rojas </h3>
@@ -106,7 +106,7 @@
         </div>
     </div>
 
-    <div class="carrito-acciones">
+    <div class="carrito-acciones disabled">
     <div class="carrito-acciones-izquierda">
         <button class="carrito-acciones-vaciar"> Vaciar carrito</button>
     </div>
@@ -119,7 +119,7 @@
     </div>
     </div>
 
-                
+    <p class="carrito-comprado disabled"> Muchas gracias por tu compra.<i class="bi bi-emoji-laughing"></i> </p>           
 
 
 

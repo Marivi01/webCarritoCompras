@@ -15,20 +15,20 @@
                 <h1 class="logo">Tienda de Frutas y Verduras</h1>
                 <nav>
                     <ul class="menu">
-                        <li><button class="boton-menu boton-categoria active"> 
+                        <li><button id="todos"   class="boton-menu boton-categoria active"> 
                             <i class="bi bi-hand-index-thumb-fill"></i>  Todos los productos</button>
                         </li>
-                        <li><button class="boton-menu boton-categoria ">
+                        <li><button id="fruta"   class="boton-menu boton-categoria ">
                              <i class="bi bi-hand-index-thumb"></i>  Frutas</button>
                             </li>
-                        <li><button class="boton-menu boton-categoria ">
+                        <li><button id="verdura" class="boton-menu boton-categoria ">
                             <i class="bi bi-hand-index-thumb"></i>  Verduras</button>
                         </li>
-                        <li><button class="boton-menu boton-categoria ">
+                        <li><button id="Otros"   class="boton-menu boton-categoria ">
                             <i class="bi bi-hand-index-thumb-fill"></i>  Otros</button>
                         </li>
                         <li><a class="boton-menu boton-carrito" href="./carrito.html">  
-                            <i class="bi bi-cart-fill"></i>  Carrito <span class="numero"> 0 </span></a>
+                            <i class="bi bi-cart-fill"></i>  Carrito <span class="numero" id="numero"> 0 </span></a>
                         </li>
                     
                     </ul>
@@ -39,9 +39,12 @@
             </header>
         </aside>
         <main>
-            <h2 class="titulo-principal"> Todos los productos </h2>
-            <div class="contenedor-productos">
-                <div class="producto">
+            <h2 class="titulo-principal" id="tituloPrincipal"> Todos los productos </h2>
+            <div id="contenedor-productos"  class="contenedor-productos">
+                  <!-- CONTINUA EN JS PASO 2-->
+
+                <!-- HTML inicial PASO 1-->
+                <!-- <div class="producto">
                     <img class= "producto-imagen"src="./imagenes/bananas.jpg" alt="">
                     <div class="producto-detalle">
                         <h3 class="producto-titulo"> Bananas </h3>
@@ -83,8 +86,8 @@
                         <h3 class="producto-titulo"> Pelones </h3>
                         <p class="producto-precio"> Precio x kg. $800</p>
                         <button class="producto-agregar"> Agregar </button>
-                    </div>
-                </div>
+                    </div> -->
+                <!-- </div> -->
             </div>
         </main>
     </div>

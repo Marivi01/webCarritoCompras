@@ -170,6 +170,7 @@ botonesCategorias.forEach(boton => {
             const productoBoton = productos.filter(producto => producto.categoría.id === e.currentTarget.id);
 
             cargarProductos(productoBoton);
+            
 
         } else {
             tituloPrincipal.innerText = "todos los productosgit "

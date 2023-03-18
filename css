@@ -15,6 +15,7 @@
     font-family: 'Rubik', sans-serif;
 }
 
+
 h1, h2, h3, h4, h5, h6, p, a, input, textarea {
     margin: 0;
 }
@@ -154,7 +155,7 @@ a {
     border-radius: 1rem;
     aspect-ratio: 1/0.8
  }
- 
+
 
  .producto-detalle{
     background-color: var(--clr-main);

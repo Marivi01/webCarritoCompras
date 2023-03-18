@@ -187,8 +187,18 @@ function actualizarBotonesAgregar(){
         boton.addEventListener("click", agregarAlCarrito);
 
     });
+}
 
-    const productoEnCarrito=[];
+    let productoEnCarrito=[];
+
+    const productoEnCarritoLS= JSON.parse(localStorage.getItem("productos-en-carrito"));
+    if (productoEnCarritoLS){
+        productoEnCarrito = productoEnCarritoLS;
+        actualizarNumero();
+    }
+    else{
+        productoEnCarrito=[];
+    }
 
     function agregarAlCarrito(e){
         const idBoton = e.currentTarget.id;
@@ -205,9 +215,10 @@ function actualizarBotonesAgregar(){
 
     actualizarNumero();
 
+    localStorage.setItem("productos-en-carrito", JSON.stringify(productoEnCarrito));
+
     }
     function actualizarNumero(){
-        let numero = productoEnCarrito.reduce((acc, productos) => acc + productos.cantidad ,0);
-        console.log(numero);
+        let nuevoNumero = productoEnCarrito.reduce((acc, productos) => acc + productos.cantidad ,0);
+        numero.innerText = nuevoNumero;
     }
-}

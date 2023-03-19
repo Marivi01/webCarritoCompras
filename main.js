@@ -173,7 +173,7 @@ botonesCategorias.forEach(boton => {
             
 
         } else {
-            tituloPrincipal.innerText = "todos los productosgit "
+            tituloPrincipal.innerText = "todos los productos"
             cargarProductos(productos);
         }
     })

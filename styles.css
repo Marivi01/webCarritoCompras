@@ -121,9 +121,9 @@ a {
     color: var(--clr-white);
    }
 
- .bi-hand-index-thumb-fill
- .bi-hand-index-thumb{
-   transform: rotate(90deg);
+ .bi-hand-index-thumb-fill::before,
+ .bi-hand-index-thumb::before{
+   transform: rotateZ(90deg);
  }
 
 
@@ -222,11 +222,13 @@ color: var(--clr-main);
 padding: .5rem;
 padding-right: 1.5rem;
 border-radius: 1rem;
+gap: 1rem;
 }
 
 .carrito-producto-imagen{
 width: 4rem;
 border-radius: 1rem;
+aspect-ratio: 1/0.8;
 }
 
 .carrito-producto small{
@@ -243,6 +245,7 @@ border-radius: 1rem;
 .carrito-acciones{
   display: flex;
   justify-content: space-between;
+  margin-top: 4rem;
 }
 
 

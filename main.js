@@ -142,6 +142,7 @@ function cargarProductos(productosElegidos) {
     productosElegidos.forEach(producto => {
         const div = document.createElement("div");
         div.classList.add("producto");
+
         div.innerHTML = `<img class= "producto-imagen"src="${producto.imagen}" alt="">
  <div class="producto-detalle">
     <h3 class="producto-titulo"> ${producto.titulo} </h3>

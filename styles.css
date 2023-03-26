@@ -331,9 +331,13 @@ aspect-ratio: 1/0.8;
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .75);
     transform: translateX(-100%);
     opacity: 0;
-    visibility: hidden;
-  
-    
+    visibility: hidden; 
+  }
+
+  .aside-visible{
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
   }
 
   .boton-menu.active::before,
@@ -374,14 +378,15 @@ main{
   }
 }
 
-@media only screen and (max-widht:675px){
+
+/* @media  screen and (max-width:675px){
   .contenedor-productos{
     grid-template-columns: 1fr 1fr;
   }
   }
 
-@media only screen and (max-widht:850px){
+@media  screen and (max-width:850px){
 .contenedor-productos{
   grid-template-columns: 1fr 1fr 1fr;
 }
-}
+} */

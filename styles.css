@@ -78,7 +78,7 @@ a {
    font-weight: 600;
    padding: 1rem;
    font-size: .85;
-   position: relative;
+   /* position: relative; */
    width: 100%;
  }
 
@@ -312,14 +312,37 @@ aspect-ratio: 1/0.8;
   display: none;
 }
 
+.aside-visible{
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+}
+
 
 /* MEDIA QUERIE */
+
+@media only screen and (max-width: 850px){
+
+  .contenedor-productos{
+   grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+  @media only screen and (max-width: 675px){
+
+    .contenedor-productos{
+     grid-template-columns: 1fr 1fr ;
+    }
+  }
+  
 
   
 @media only screen and (max-width: 600px){
 
   .wrapper{
-    grid-template-columns: 1fr;
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
     
   }
 
@@ -332,13 +355,10 @@ aspect-ratio: 1/0.8;
     transform: translateX(-100%);
     opacity: 0;
     visibility: hidden; 
+    transition: 0.2s;
   }
 
-  .aside-visible{
-    transform: translateX(0);
-    opacity: 1;
-    visibility: visible;
-  }
+  
 
   .boton-menu.active::before,
   .boton-menu.active::after{
@@ -361,32 +381,56 @@ main{
     justify-content: space-between;
     align-items: center;
   }
+
+  
   .logo{
     color: var(--clr-white);
+    font-size: 1 rem;
   }
+
   
-  .header.mobile.logo{
+  
+  .header-mobile.logo{
     color: var(--clr-gray);
   }
 
-  .open-menu{
+  .open-menu, .close-menu{
    background-color: transparent;
    color: var(--clr-gray);
    border: 0;
    font-size: 2rem;
    cursor: pointer;
   }
+
+  .close-menu{
+    display: block;
+    position:absolute;
+    top: 1rem;
+    right: 1rem;
+    
+  }
+
+  .carrito-producto{
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 0.5 rem;
+  }
+
+
+  .carrito-producto-subtotal{
+    display: none;
+  }
+
+  .carrito-acciones{
+    flex-wrap: wrap;
+    row-gap: 1rem;
+  }
 }
 
+@media only screen and (max-width: 400px){
 
-/* @media  screen and (max-width:675px){
   .contenedor-productos{
-    grid-template-columns: 1fr 1fr;
+   grid-template-columns: 1fr ;
   }
   }
-
-@media  screen and (max-width:850px){
-.contenedor-productos{
-  grid-template-columns: 1fr 1fr 1fr;
-}
-} */

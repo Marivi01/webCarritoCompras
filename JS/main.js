@@ -9,7 +9,7 @@ const productos = [
             nombre: "frutas",
             id: "fruta"
         },
-        precio: 1000
+        precio: 510
     },
     {
         id: "fruta-02",
@@ -19,7 +19,7 @@ const productos = [
             nombre: "frutas",
             id: "fruta"
         },
-        precio: 1000
+        precio: 700
     },
 
     {
@@ -30,7 +30,7 @@ const productos = [
             nombre: "frutas",
             id: "fruta"
         },
-        precio: 1000
+        precio: 800
     },
 
     {
@@ -41,7 +41,7 @@ const productos = [
             nombre: "frutas",
             id: "fruta"
         },
-        precio: 1000
+        precio: 000
     },
 
     {
@@ -52,7 +52,7 @@ const productos = [
             nombre: "frutas",
             id: "fruta"
         },
-        precio: 1000
+        precio: 600
     },
 
     {
@@ -63,7 +63,7 @@ const productos = [
             nombre: "frutas",
             id: "fruta"
         },
-        precio: 1000
+        precio: 600
     },
 
     {
@@ -74,7 +74,7 @@ const productos = [
             nombre: "frutas",
             id: "fruta"
         },
-        precio: 1000
+        precio: 0000
     },
 
     {
@@ -85,7 +85,7 @@ const productos = [
             nombre: "frutas",
             id: "fruta"
         },
-        precio: 1000
+        precio: 800
     },
 
     {
@@ -96,7 +96,7 @@ const productos = [
             nombre: "frutas",
             id: "fruta"
         },
-        precio: 1000
+        precio: 700
     },
 
     //verduras
@@ -110,7 +110,7 @@ const productos = [
             nombre: "verduras",
             id: "verdura"
         },
-        precio: 1000
+        precio: 300
     },
 
     {
@@ -121,7 +121,7 @@ const productos = [
             nombre: "verduras",
             id: "verdura"
         },
-        precio: 1000
+        precio: 300
     },
 
 
@@ -134,16 +134,22 @@ const tituloPrincipal = document.querySelector("#tituloPrincipal");
 let botonesAgregar = document.querySelectorAll(".producto-agregar");
 const numero= document.querySelector("#numero");
 
+botonesCategorias.forEach(boton =>boton.addEventListener("click",() => {
+    aside.classList.remove("aside-visible");
+}));
+
 
 function cargarProductos(productosElegidos) {
 
     contenedorProductos.innerHTML = "";
 
+
+
     productosElegidos.forEach(producto => {
         const div = document.createElement("div");
         div.classList.add("producto");
 
-        div.innerHTML = `<img class= "producto-imagen"src="${producto.imagen}" alt="">
+        div.innerHTML = `<img class= "producto-imagen"src="${producto.imagen}" alt="${producto.titulo}">
  <div class="producto-detalle">
     <h3 class="producto-titulo"> ${producto.titulo} </h3>
     <p class="producto-precio"> ${producto.precio} </p>
@@ -151,7 +157,9 @@ function cargarProductos(productosElegidos) {
  </div>`;
         contenedorProductos.append(div);
 
-    })
+    }) 
+
+    
 
     actualizarBotonesAgregar();
 }
@@ -174,8 +182,9 @@ botonesCategorias.forEach(boton => {
             
 
         } else {
-            tituloPrincipal.innerText = "todos los productos"
             cargarProductos(productos);
+            tituloPrincipal.innerText = "todos los productos"
+            
         }
     })
 
@@ -189,7 +198,7 @@ function actualizarBotonesAgregar(){
         boton.addEventListener("click", agregarAlCarrito);
 
     });
-}
+};
 
     let productoEnCarrito=[];
 
@@ -200,7 +209,7 @@ function actualizarBotonesAgregar(){
     }
     else{
         productoEnCarrito=[];
-    }
+    };
 
     function agregarAlCarrito(e){
         const idBoton = e.currentTarget.id;
@@ -224,3 +233,5 @@ function actualizarBotonesAgregar(){
         let nuevoNumero = productoEnCarrito.reduce((acc, productos) => acc + productos.cantidad ,0);
         numero.innerText = nuevoNumero;
     }
+
+    

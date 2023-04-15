@@ -1,0 +1,125 @@
+[
+    {
+        "id": "fruta-01",
+        "titulo": "Banana",
+        "imagen": "./imagenes/FRUTAS/bananas.jpg",
+        "categoria": {
+            "nombre": "frutas",
+            "id": "fruta"
+        },
+        "precio": 510
+    },
+    {
+        "id": "fruta-02",
+        "titulo": "Ciruela",
+        "imagen": "./imagenes/FRUTAS/ciruela mi foto.jpg",
+        "categoria": {
+            "nombre": "frutas",
+            "id": "fruta"
+        },
+        "precio": 700
+    },
+
+    {
+        "id": "fruta-03",
+        "titulo": "Durazno",
+        "imagen": "./imagenes/FRUTAS/durazno mi foto.jpg",
+        "categoria": {
+            "nombre": "frutas",
+            "id": "fruta"
+        },
+        "precio": 800
+    },
+
+    {
+        "id": "fruta-04",
+        "titulo": "Frutillas",
+        "imagen": "./imagenes/FRUTAS/frutillas mi foto.jpg",
+        "categoria": {
+            "nombre": "frutas",
+            "id": "fruta"
+        },
+        "precio": 2500
+    },
+
+    {
+        "id": "fruta-05",
+        "titulo": "Manzana",
+        "imagen": "./imagenes/FRUTAS/manzana mi foto.jpg",
+        "categoria": {
+            "nombre": "frutas",
+            "id": "fruta"
+        },
+        "precio": 600
+    },
+
+    {
+        "id": "fruta-06",
+        "titulo": "Manzana verde",
+        "imagen": "./imagenes/FRUTAS/manzana verde.jpg",
+        "categoria": {
+            "nombre": "frutas",
+            "id": "fruta"
+        },
+        "precio": 600
+    },
+
+    {
+        "id": "fruta-07",
+        "titulo": "Naranjas",
+        "imagen": "./imagenes/FRUTAS/naranjas.jpg",
+        "categoria": {
+            "nombre": "frutas",
+            "id": "fruta"
+        },
+        "precio": 850
+    },
+
+    {
+        "id": "fruta-08",
+        "titulo": "Pelones",
+        "imagen": "./imagenes/FRUTAS/pelones mi foto.jpg",
+        "categoria": {
+            "nombre": "frutas",
+            "id": "fruta"
+        },
+        "precio": 800
+    },
+
+    {
+        "id": "fruta-09",
+        "titulo": "Uvas",
+        "imagen": "./imagenes/FRUTAS/uvas mi foto.jpg",
+        "categoria": {
+            "nombre": "frutas",
+            "id": "fruta"
+        },
+        "precio": 700
+    },
+
+
+
+
+    {
+        "id": "verdura-01",
+        "titulo": "Papas",
+        "imagen": "/imagenes/VERDURAS/papas.jpg",
+        "categoria": {
+            "nombre": "verdura",
+            "id": "verdura"
+        },
+        "precio": 300
+    },
+
+    {
+        "id": "verdura-02",
+        "titulo": "cebolla",
+        "imagen": "./imagenes/VERDURAS/cebollas.jpg",
+        "categoria": {
+            "nombre": "verdura",
+            "id": "verdura"
+        },
+        "precio": 300
+    }
+
+  ]

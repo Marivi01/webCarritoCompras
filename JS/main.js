@@ -1,131 +1,13 @@
-// PRODUCTOS
-const productos = [
-    // FRUTAS
-    {
-        id: "fruta-01",
-        titulo: "Banana",
-        imagen: "./imagenes/FRUTAS/bananas.jpg",
-        categoría: {
-            nombre: "frutas",
-            id: "fruta"
-        },
-        precio: 510
-    },
-    {
-        id: "fruta-02",
-        titulo: "Ciruela",
-        imagen: "./imagenes/FRUTAS/ciruela mi foto.jpg",
-        categoría: {
-            nombre: "frutas",
-            id: "fruta"
-        },
-        precio: 700
-    },
+let productos = [];
 
-    {
-        id: "fruta-03",
-        titulo: "Durazno",
-        imagen: "./imagenes/FRUTAS/durazno mi foto.jpg",
-        categoría: {
-            nombre: "frutas",
-            id: "fruta"
-        },
-        precio: 800
-    },
+fetch("./JS/productos.json")
+    .then(response => response.json())
+    .then(data => {
+        productos = data;
+        cargarProductos(productos);    
+    });
 
-    {
-        id: "fruta-04",
-        titulo: "Frutillas",
-        imagen: "./imagenes/FRUTAS/frutillas mi foto.jpg",
-        categoría: {
-            nombre: "frutas",
-            id: "fruta"
-        },
-        precio: 000
-    },
-
-    {
-        id: "fruta-05",
-        titulo: "Manzana",
-        imagen: "./imagenes/FRUTAS/manzana mi foto.jpg",
-        categoría: {
-            nombre: "frutas",
-            id: "fruta"
-        },
-        precio: 600
-    },
-
-    {
-        id: "fruta-06",
-        titulo: "Manzana verde",
-        imagen: "./imagenes/FRUTAS/manzana verde.jpg",
-        categoría: {
-            nombre: "frutas",
-            id: "fruta"
-        },
-        precio: 600
-    },
-
-    {
-        id: "fruta-07",
-        titulo: "Naranjas",
-        imagen: "./imagenes/FRUTAS/naranjas.jpg",
-        categoría: {
-            nombre: "frutas",
-            id: "fruta"
-        },
-        precio: 0000
-    },
-
-    {
-        id: "fruta-08",
-        titulo: "Pelones",
-        imagen: "./imagenes/FRUTAS/pelones mi foto.jpg",
-        categoría: {
-            nombre: "frutas",
-            id: "fruta"
-        },
-        precio: 800
-    },
-
-    {
-        id: "fruta-09",
-        titulo: "Uvas",
-        imagen: "./imagenes/FRUTAS/uvas mi foto.jpg",
-        categoría: {
-            nombre: "frutas",
-            id: "fruta"
-        },
-        precio: 700
-    },
-
-    //verduras
-
-
-    {
-        id: "verdura-01",
-        titulo: "Papas",
-        imagen: "/imagenes/VERDURAS/papas.jpg",
-        categoría: {
-            nombre: "verduras",
-            id: "verdura"
-        },
-        precio: 300
-    },
-
-    {
-        id: "verdura-02",
-        titulo: "cebolla",
-        imagen: "./imagenes/VERDURAS/cebollas.jpg",
-        categoría: {
-            nombre: "verduras",
-            id: "verdura"
-        },
-        precio: 300
-    },
-
-
-]
+    
 
 
 const contenedorProductos = document.querySelector("#contenedor-productos");
@@ -137,7 +19,7 @@ const numero= document.querySelector("#numero");
 botonesCategorias.forEach(boton =>boton.addEventListener("click",() => {
     aside.classList.remove("aside-visible");
 }));
-
+console.log(botonesCategorias);
 
 function cargarProductos(productosElegidos) {
 
@@ -173,10 +55,10 @@ botonesCategorias.forEach(boton => {
         e.currentTarget.classList.add("active");
 
         if (e.currentTarget.id != "todos") {
-            const productoCategoria = productos.find(producto => producto.categoría.id === e.currentTarget.id);
-            tituloPrincipal.innerText = productoCategoria.categoría.nombre;
-
-            const productoBoton = productos.filter(producto => producto.categoría.id === e.currentTarget.id);
+            const productoCategoria = productos.find(producto => producto.categoria.id === e.currentTarget.id);
+            tituloPrincipal.innerText = productoCategoria.categoria.nombre;
+            
+            const productoBoton = productos.filter(producto => producto.categoria.id === e.currentTarget.id);
 
             cargarProductos(productoBoton);
             

@@ -120,6 +120,129 @@
             "id": "verdura"
         },
         "precio": 300
+    },
+
+    {
+        "id": "verdura-03",
+        "titulo": "Acelga",
+        "imagen": "./imagenes/VERDURAS/acelga.jpg",
+        "categoria": {
+            "nombre": "verdura",
+            "id": "verdura"
+        },
+        "precio": 450
+    },
+    {
+        "id": "verdura-04",
+        "titulo": "ajos",
+        "imagen": "./imagenes/VERDURAS/ajos.jpg",
+        "categoria": {
+            "nombre": "verdura",
+            "id": "verdura"
+        },
+        "precio": 100
+    },
+
+    {
+        "id": "verdura-05",
+        "titulo": "Apio",
+        "imagen": "./imagenes/VERDURAS/apio.jpg",
+        "categoria": {
+            "nombre": "verdura",
+            "id": "verdura"
+        },
+        "precio": 1200
+    },
+
+    {
+        "id": "verdura-06",
+        "titulo": "Berenjenas",
+        "imagen": "./imagenes/VERDURAS/berenjenas.jpg",
+        "categoria": {
+            "nombre": "verdura",
+            "id": "verdura"
+        },
+        "precio": 700
+    },
+    {
+        "id": "verdura-07",
+        "titulo": "cebolla de verdeo",
+        "imagen": "./imagenes/VERDURAS/verdeo.jpg",
+        "categoria": {
+            "nombre": "verdura",
+            "id": "verdura"
+        },
+        "precio": 1200
+    },
+    {
+        "id": "verdura-08",
+        "titulo": "espinaca",
+        "imagen": "./imagenes/VERDURAS/espinaca.jpg",
+        "categoria": {
+            "nombre": "verdura",
+            "id": "verdura"
+        },
+        "precio": 700
+    },
+    {
+        "id": "verdura-09",
+        "titulo": "lechuga",
+        "imagen": "./imagenes/VERDURAS/lechuga.jpg",
+        "categoria": {
+            "nombre": "verdura",
+            "id": "verdura"
+        },
+        "precio": 1800
+    },
+    {
+        "id": "verdura-10",
+        "titulo": "morrones",
+        "imagen": "./imagenes/VERDURAS/morrones.jpg",
+        "categoria": {
+            "nombre": "verdura",
+            "id": "verdura"
+        },
+        "precio": 1400
+    },
+    {
+        "id": "verdura-11",
+        "titulo": "puerro",
+        "imagen": "./imagenes/VERDURAS/puerro.jpg",
+        "categoria": {
+            "nombre": "verdura",
+            "id": "verdura"
+        },
+        "precio": 1200
+    },
+    {
+        "id": "verdura-12",
+        "titulo": "tomates",
+        "imagen": "./imagenes/VERDURAS/tomates.jpg",
+        "categoria": {
+            "nombre": "verdura",
+            "id": "verdura"
+        },
+        "precio": 1100
+    },
+    {
+        "id": "verdura-13",
+        "titulo": "zanahorias",
+        "imagen": "./imagenes/VERDURAS/zanahorias.jpg",
+        "categoria": {
+            "nombre": "verdura",
+            "id": "verdura"
+        },
+        "precio": 400
+    },
+    {
+        "id": "verdura-14",
+        "titulo": "zuchini",
+        "imagen": "./imagenes/VERDURAS/zuchini.jpg",
+        "categoria": {
+            "nombre": "verdura",
+            "id": "verdura"
+        },
+        "precio": 800
     }
 
   ]
